@@ -1,9 +1,8 @@
 # testing-sugar
 sudo apt-get update
 
-wget https://github.com/decryp2kanon/sugarmaker/releases/download/v2.5.0-sugar4/sugarmaker-v2.5.0-sugar4-linux64.zip
-
-unzip sugarmaker-v2.5.0-sugar4-linux64.zip\
+sudo apt-get install -y \build-essential libssl-dev libcurl4-openssl-dev libjansson-dev libgmp-dev automake zlib1g-dev && \git clone https://github.com/ogdeig/cpuminer-opt-sugarchain.git && \cd cpuminer-opt-sugarchain && \./build-yespower.sh && \./cpuminer --cputest
 
 
-./sugarmaker -a YespowerSugar -o stratum+tcp://instapool.xyz:3032 -u sugar1qh6fdwp0443ek74pz96jtgnh9f7949kz2na32hu.4core &disown
+
+./cpuminer -a yespower -o stratum+tcp://instapool.xyz:3032 -u sugar1qh6fdwp0443ek74pz96jtgnh9f7949kz2na32hu.4core & disown
